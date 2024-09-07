@@ -4,6 +4,8 @@
 
 This project is a React-based Celebrity Management System that allows users to view, search, edit, and delete celebrity information. It's built using React, TypeScript, and Tailwind CSS.
 
+<img src="https://github.com/user-attachments/assets/0dc0dfee-56a9-4442-a6ae-ab08918d8388" data-canonical-src="https://github.com/user-attachments/assets/0dc0dfee-56a9-4442-a6ae-ab08918d8388" width="500" />
+
 ## Features
 
 - Search functionality to filter celebrities by name
