@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# Celebrity Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a React-based Celebrity Management System that allows users to view, search, edit, and delete celebrity information. It's built using React, TypeScript, and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Search functionality to filter celebrities by name
+- Accordion-style list of celebrities
+- Detailed view of celebrity information
+- Edit mode for updating celebrity details
+- Delete functionality with confirmation
+- Age calculation based on date of birth
+- Form validation for data integrity
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- Tailwind CSS
+- JSON for data storage
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```
+   git clone https://github.com/aswinprasad/Celebrity-Management-System.git
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Navigate to the project directory:
+   ```
+   cd celebrity-management-system
+   ```
+3. Install dependencies:
+
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+
+## Usage
+
+- Use the search bar to find specific celebrities
+- Click on a celebrity's name to expand their information
+- Edit celebrity details by clicking the edit button (only for adults)
+- Delete a celebrity with confirmation
